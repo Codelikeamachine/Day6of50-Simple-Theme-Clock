@@ -31,6 +31,11 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-image: url('sunset-3120484_1280.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  transition: background-color 0.5s ease-in;
 }
 
 .toggle {
@@ -69,7 +74,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
-  transition: all 0.5s ease-in linear;
+  transition: all 0.3s ease-in-out; /* Add transition for smooth animation */
 }
 
 .needle.hour {
@@ -85,6 +90,10 @@ body {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
+}
+
+.needle:hover {
+  transform: translate(-50%, -100%) rotate(5deg) scale(1.1); /* Add slight rotation and scaling on hover */
 }
 
 .center-point {
